@@ -63,3 +63,6 @@ if time_to_insert:
    st.success(Succcess_message,icon="✅")
    #st.success('Your Smoothie is ordered' ,icon="✅")
    #st.success(Messg ,icon="✅")
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
